@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styles.css';
 
-export function Post() {
+export default function Post() {
     const [char, setChar] = useState(0);
 
     function numberOfCharacters(event) {

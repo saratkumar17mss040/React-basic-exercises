@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './styles.css';
 
-export function ToggleMode() {
+export default function ToggleMode() {
     const [isDarkMode, setMode] = useState(false);
 
     function setTheme() {

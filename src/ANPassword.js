@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export function ANPassword() {
+export default function ANPassword() {
     const [password, setPassword] = useState('');
 
     function onChangeSetPassword(event) {

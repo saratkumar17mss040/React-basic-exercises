@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './disableArrow.css';
 
-export function AgeChecker() {
+export default function AgeChecker() {
     let [age, checkEligibility] = useState('');
 
     function checkEligibilityForVoting() {

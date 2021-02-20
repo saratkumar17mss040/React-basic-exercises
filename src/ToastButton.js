@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ToastMessage } from './ToastMessage';
 
-export function ToastButton() {
+export default function ToastButton() {
     const [isButtonClicked, setButtonClicked] = useState(false);
     const [toastTypeMessage, setToastType] = useState('error');
 

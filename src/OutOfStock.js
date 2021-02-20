@@ -3,7 +3,7 @@ import RenderStockItems from './RenderStockItems';
 import RenderStockListItems from './RenderStockListItems';
 import { Stocks } from './Stocks';
 
-export function Stock() {
+export default function Stock() {
     let [stockItems, setStock] = useState([]);
     let isSameProduct = false;
 

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Items } from './Items';
 import LikeList from './LikeList';
 
-export function LikeButton() {
+export default function LikeButton() {
     const [likeInfo, setLikeInfo] = useState(Items);
 
     function setLikeOrNot(item, index) {

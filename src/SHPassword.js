@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export function SHPassword() {
+export default function SHPassword() {
     const [showPassword, toggleHideShowPassword] = useState(false);
     const [password, setPassword] = useState('');
 

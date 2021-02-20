@@ -5,7 +5,7 @@ import RenderListItems from './RenderListItems';
 
 // AddToCart can be made modular usig Arrays -
 // include method instead by ourself looping
-export function AddToCart() {
+export default function AddToCart() {
     let [cartItems, setCart] = useState([]);
     let isSameProduct = false;
 

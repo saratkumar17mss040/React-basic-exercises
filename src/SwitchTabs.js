@@ -4,7 +4,7 @@ import { About } from './About';
 import { Profile } from './Profile';
 import { RouteButtons } from './RouteButtons';
 
-export function SwitchTabs() {
+export default function SwitchTabs() {
     const [currentRoute, setCurrentRoute] = useState('');
 
     function onRouteChange(event) {

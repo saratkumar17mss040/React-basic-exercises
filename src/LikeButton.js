@@ -1,22 +1,28 @@
+import { useState } from 'react';
 import { Items } from './Items';
+import LikeList from './LikeList';
 
 export function LikeButton() {
-    const renderList = Items.map((item, index) => {
-        return (
-            <div>
-                <li
-                    style={{
-                        listStyle: 'none',
-                        marginTop: '20px',
-                    }}
-                    key={index}
-                >
-                    {item.name}
-                </li>
-                <button type="button">Like</button>
-            </div>
-        );
-    });
+    const [likeInfo, setLikeInfo] = useState(Items);
 
-    return <div>{renderList}</div>;
+    function setLikeOrNot(item, index) {
+        for (let i = 0; i < likeInfo.length; i++) {
+            if (i === index) {
+                let newLikeInfo = [...likeInfo];
+
+                newLikeInfo[i] = {
+                    ...newLikeInfo[i],
+                    isLiked: !newLikeInfo[i].isLiked,
+                };
+
+                setLikeInfo([...newLikeInfo]);
+            }
+        }
+    }
+
+    return (
+        <div>
+            <LikeList setLikeOrNot={setLikeOrNot} likeInfo={likeInfo} />
+        </div>
+    );
 }

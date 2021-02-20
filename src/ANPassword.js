@@ -7,6 +7,20 @@ export function ANPassword() {
         setPassword(event.target.value);
     }
 
+    function showPasswordInfo(password) {
+        return password === '' ? (
+            <div></div>
+        ) : (
+            <div>
+                {!/\d/g.test(password) ? (
+                    <p style={{ color: 'red' }}> password missing numbers </p>
+                ) : (
+                    <p>valid passsword</p>
+                )}
+            </div>
+        );
+    }
+
     return (
         <div>
             <input
@@ -16,15 +30,7 @@ export function ANPassword() {
                 placeholder="enter password"
             />{' '}
             <br />
-            {password === '' ? (
-                <div></div>
-            ) : (
-                <div>
-                    {!/\d/g.test(password) && (
-                        <p style={{ color: 'red' }}> password missing numbers </p>
-                    )}
-                </div>
-            )}
+            {showPasswordInfo(password)}
         </div>
     );
 }

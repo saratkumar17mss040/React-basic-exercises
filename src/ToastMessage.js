@@ -13,12 +13,12 @@ export function ToastMessage({ buttonClickedOrNot, toastType }) {
         }
     }
 
-    /* function removeToast() {
-		buttonClickedOrNot = false;
-		toastType = 'success';
-		console.log(buttonClickedOrNot, toastType);
-		setToastClass(buttonClickedOrNot, toastType);
-	} */
+    // function removeToast() {
+    //     buttonClickedOrNot = false;
+    //     toastType = 'success';
+    //     console.log(buttonClickedOrNot, toastType);
+    //     setToastClass(buttonClickedOrNot, toastType);
+    // }
 
     return (
         <div className={setToastClass(buttonClickedOrNot, toastType)}>

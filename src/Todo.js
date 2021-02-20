@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import TodoList from './TodoList';
 
 export function Todo() {
     const [allTodo, setAllTodo] = useState([]);
@@ -6,8 +7,23 @@ export function Todo() {
 
     function addTodo() {
         if (todo === '') return;
-        allTodo.push(todo);
-        setAllTodo([...allTodo]);
+        setAllTodo([
+            ...allTodo,
+            {
+                todo: todo,
+                isSelected: false,
+            },
+        ]);
+    }
+
+    function strikeThrough(index) {
+        let newAllTodo = allTodo.map((item, i) => {
+            if (i === index) {
+                return { todo: item.todo, isSelected: !item.isSelected };
+            }
+            return item;
+        });
+        setAllTodo(newAllTodo);
     }
 
     return (
@@ -21,11 +37,7 @@ export function Todo() {
             <button type="button" onClick={addTodo}>
                 Add
             </button>
-            <ul>
-                {allTodo.map((todo, index) => {
-                    return <li key={index}>{todo}</li>;
-                })}
-            </ul>
+            <TodoList strikeThrough={strikeThrough} allTodo={allTodo} />
         </div>
     );
 }

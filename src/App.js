@@ -1,7 +1,10 @@
 import './styles.css';
-// This is a default import
+// This is a default import - can name the import name anything we want - only
+// one default export from file
 import Product from './Product';
-// This is a named import
+// This is a named import - cannot name anything we want - we want to specfiy the name that we exported
+// from the other file - we can export any other things we want from the file or we can export everything // /// from the file using eg- import * as MainComponents from "./MyComponent";
+// use MainComponents.MyComponent and MainComponents.MyComponent2
 import { Counter } from './Counter';
 import { AgeChecker } from './AgeChecker';
 import { PasswordChecker } from './PasswordChecker';

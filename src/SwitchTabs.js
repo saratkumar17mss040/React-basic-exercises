@@ -9,6 +9,18 @@ export function SwitchTabs() {
     function onRouteChange(event) {
         setCurrentRoute(event.target.value);
     }
+
+    function displayCurrentRoute(currentRoute) {
+        return currentRoute === 'home' ? (
+            <Home />
+        ) : currentRoute === 'about' ? (
+            <About />
+        ) : currentRoute === 'profile' ? (
+            <Profile />
+        ) : (
+            <p>No page</p>
+        );
+    }
     return (
         <div style={{ margin: '30px' }}>
             <button
@@ -35,17 +47,7 @@ export function SwitchTabs() {
             >
                 Profile
             </button>
-            <div>
-                {currentRoute === 'home' ? (
-                    <Home />
-                ) : currentRoute === 'about' ? (
-                    <About />
-                ) : currentRoute === 'profile' ? (
-                    <Profile />
-                ) : (
-                    <p>No page</p>
-                )}
-            </div>
+            <div>{displayCurrentRoute(currentRoute)}</div>
         </div>
     );
 }

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './disableArrow.css';
 
 export function AgeChecker() {
     let [age, checkEligibility] = useState('');
@@ -28,6 +29,7 @@ export function AgeChecker() {
         <div>
             <p>Check if your are eligible to vote or not</p>
             <input
+                value={age}
                 type="number"
                 onChange={changeAge}
                 placeholder="enter your age"

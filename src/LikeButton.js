@@ -8,7 +8,7 @@ export function LikeButton() {
     function setLikeOrNot(item, index) {
         for (let i = 0; i < likeInfo.length; i++) {
             if (i === index) {
-                let newLikeInfo = [...likeInfo];
+                const newLikeInfo = [...likeInfo];
 
                 newLikeInfo[i] = {
                     ...newLikeInfo[i],

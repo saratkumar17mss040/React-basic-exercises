@@ -44,6 +44,7 @@ export function PCSubmit() {
     return (
         <div>
             <input
+                value={password}
                 onChange={onChangeSetPassword}
                 style={{ marginBottom: '25px' }}
                 type="text"
@@ -51,6 +52,7 @@ export function PCSubmit() {
             />{' '}
             <br />
             <input
+                value={confirmPassword}
                 onChange={onChangeSetConfirmPassword}
                 type="text"
                 placeholder="confirm password"

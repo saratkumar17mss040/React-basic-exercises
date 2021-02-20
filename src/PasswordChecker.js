@@ -34,6 +34,7 @@ export function PasswordChecker() {
         <div>
             {/* Simple password functions can be made inline if wanted*/}
             <input
+                value={password}
                 onChange={onChangeSetPassword}
                 style={{ marginBottom: '25px' }}
                 type="text"
@@ -41,6 +42,7 @@ export function PasswordChecker() {
             />{' '}
             <br />
             <input
+                value={confirmPassword}
                 onChange={onChangeSetConfirmPassword}
                 type="text"
                 placeholder="confirm password"

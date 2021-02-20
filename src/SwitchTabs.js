@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Home } from './Home';
 import { About } from './About';
 import { Profile } from './Profile';
+import { RouteButtons } from './RouteButtons';
 
 export function SwitchTabs() {
     const [currentRoute, setCurrentRoute] = useState('');
@@ -23,30 +24,18 @@ export function SwitchTabs() {
     }
     return (
         <div style={{ margin: '30px' }}>
-            <button
-                style={{ marginRight: '15px' }}
-                value="home"
-                onClick={onRouteChange}
-                type="button"
-            >
-                Home
-            </button>
-            <button
-                style={{ marginRight: '15px' }}
-                value="about"
-                onClick={onRouteChange}
-                type="button"
-            >
-                About
-            </button>
-            <button
-                style={{ marginRight: '15px' }}
-                value="profile"
-                onClick={onRouteChange}
-                type="button"
-            >
-                Profile
-            </button>
+            {RouteButtons.map((button) => {
+                return (
+                    <button
+                        type="button"
+                        style={{ marginRight: '15px' }}
+                        value={button}
+                        onClick={onRouteChange}
+                    >
+                        {button}
+                    </button>
+                );
+            })}
             <div>{displayCurrentRoute(currentRoute)}</div>
         </div>
     );

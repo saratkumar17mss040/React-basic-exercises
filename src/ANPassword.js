@@ -8,22 +8,23 @@ export function ANPassword() {
     }
 
     function showPasswordInfo(password) {
-        return password === '' ? (
-            <div></div>
-        ) : (
-            <div>
-                {!/\d/g.test(password) ? (
-                    <p style={{ color: 'red' }}> password missing numbers </p>
-                ) : (
-                    <p>valid passsword</p>
-                )}
-            </div>
-        );
+        if (password === '') {
+            return <p></p>;
+        } else if (!/\d/gi.test(password) || !/[a-z]/gi.test(password)) {
+            return (
+                <p style={{ color: 'red' }}>
+                    Password missing numbers or alphabets
+                </p>
+            );
+        } else {
+            return <p>Valid password </p>;
+        }
     }
 
     return (
         <div>
             <input
+                value={password}
                 onChange={onChangeSetPassword}
                 style={{ marginBottom: '25px' }}
                 type="text"

@@ -17,6 +17,7 @@ export function SHPassword() {
     return (
         <div>
             <input
+                value={password}
                 onChange={updatePassword}
                 id="password"
                 placeholder="enter password"

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { ToastMessage } from './ToastMessage';
 
 export default function ToastButton() {

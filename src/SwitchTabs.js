@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Home } from './Home';
 import { About } from './About';
 import { Profile } from './Profile';

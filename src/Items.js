@@ -1,4 +1,4 @@
-export let Items = [
+export const Items = [
     {
         name: 'Shirt',
         price: '$100',

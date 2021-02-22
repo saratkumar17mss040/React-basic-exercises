@@ -14,15 +14,17 @@ export default function AgeChecker() {
     }
 
     function displayAgeResult() {
-        return age !== '' ? (
-            <p style={age < 18 ? { color: 'red' } : {}}>
-                {' '}
-                You are {age < 18 ? 'not' : ''} eligible to vote as your age is{' '}
-                {age}
-            </p>
-        ) : (
-            <p> </p>
-        );
+        if (age !== '') {
+            return (
+                <p style={age < 18 ? { color: 'red' } : {}}>
+                    {' '}
+                    You are {age < 18 ? 'not' : ''} eligible to vote as your age
+                    is {age}
+                </p>
+            );
+        } else {
+            return <p> </p>;
+        }
     }
 
     return (

@@ -1,4 +1,4 @@
-import './styles.css';
+import React from 'react';
 import { PasswordChecker } from './PasswordChecker';
 import Product from './Product';
 import Counter from './Counter';
@@ -15,6 +15,7 @@ import LikeButton from './LikeButton';
 import ToggleMode from './ToggleMode';
 import Stock from './OutOfStock';
 import Todo from './Todo';
+import './styles.css';
 
 export default function App() {
     return (

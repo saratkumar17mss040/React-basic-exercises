@@ -17,17 +17,16 @@ export function PasswordChecker() {
     }
 
     function displayPasswordResult(password) {
-        return password === '' && confirmPassword === '' ? (
-            <div> </div>
-        ) : password === '' && confirmPassword !== '' ? (
-            <div>Please enter password </div>
-        ) : password !== '' && confirmPassword === '' ? (
-            <div>Please enter confirm password </div>
-        ) : password === confirmPassword ? (
-            <p>Correct password</p>
-        ) : (
-            <p>Not correct password</p>
-        );
+        if (password === '' && confirmPassword === '') {
+            return <div> </div>;
+        } else if (password === '' && confirmPassword !== '') {
+            return <div>Please enter password </div>;
+        } else if (password !== '' && confirmPassword === '') {
+            return <div>Please enter confirm password </div>;
+        } else if (password === confirmPassword) {
+            return <p>Correct password</p>;
+        }
+        return <p>Not correct password</p>;
     }
 
     return (

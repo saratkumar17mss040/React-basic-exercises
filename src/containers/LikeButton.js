@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Items } from '../assets/Items';
 import LikeList from '../components/LikeList';
 

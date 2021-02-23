@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Items } from './Items';
-import RenderCartItems from './RenderCartItems';
-import RenderListItems from './RenderListItems';
+import { Items } from '../assets/Items';
+import RenderCartItems from '../components/RenderCartItems';
+import RenderListItems from '../components/RenderListItems';
 
 // AddToCart can be made modular usig Arrays -
 // include method instead by ourself looping

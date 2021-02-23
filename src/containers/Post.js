@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './styles.css';
 
 export default function Post() {
     const [char, setChar] = useState(0);

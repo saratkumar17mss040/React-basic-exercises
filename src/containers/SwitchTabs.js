@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Home } from './Home';
-import { About } from './About';
-import { Profile } from './Profile';
-import { RouteButtons } from './RouteButtons';
+import { Home } from '../components';
+import { About } from '../components';
+import { Profile } from '../components';
+import { RouteButtons } from '../assets/RouteButtons';
 
 export default function SwitchTabs() {
     const [currentRoute, setCurrentRoute] = useState('');

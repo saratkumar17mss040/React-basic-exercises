@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import RenderStockItems from './RenderStockItems';
-import RenderStockListItems from './RenderStockListItems';
-import { Stocks } from './Stocks';
+import RenderStockItems from '../components/RenderStockItems';
+import RenderStockListItems from '../components/RenderStockListItems';
+import { Stocks } from '../assets/Stocks';
 
 export default function Stock() {
     let [stockItems, setStock] = useState([]);

@@ -1,20 +1,20 @@
 import React from 'react';
-import { PasswordChecker } from './PasswordChecker';
-import Product from './Product';
-import Counter from './Counter';
-import AgeChecker from './AgeChecker';
-import Post from './Post';
-import ANPassword from './ANPassword';
-import PCSubmit from './PCSubmit';
-import SHPassword from './SHPassword';
-import DesignTool from './DesignTool';
-import AddToCart from './AddToCart';
-import SwitchTabs from './SwitchTabs';
-import ToastButton from './ToastButton';
-import LikeButton from './LikeButton';
-import ToggleMode from './ToggleMode';
-import Stock from './OutOfStock';
-import Todo from './Todo';
+import Product from './components/Product';
+import PasswordChecker from './containers/PasswordChecker';
+import AgeChecker from './containers/AgeChecker';
+import Counter from './containers/Counter';
+import ANPassword from './containers/ANPassword';
+import SHPassword from './containers/SHPassword';
+import PCSubmit from './containers/PCSubmit';
+import DesignTool from './containers/DesignTool';
+import Post from './containers/Post';
+import AddToCart from './containers/AddToCart';
+import SwitchTabs from './containers/SwitchTabs';
+import ToastButton from './containers/ToastButton';
+import LikeButton from './containers/LikeButton';
+import ToggleMode from './containers/ToggleMode';
+import Stock from './containers/OutOfStock';
+import Todo from './containers/Todo';
 import './styles.css';
 
 export default function App() {

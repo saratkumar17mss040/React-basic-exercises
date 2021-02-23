@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import { Home } from '../components';
-import { About } from '../components';
-import { Profile } from '../components';
+import { Routes } from '../components/Routes';
 import { RouteButtons } from '../assets/RouteButtons';
 
 export default function SwitchTabs() {
@@ -13,11 +11,11 @@ export default function SwitchTabs() {
 
     function displayCurrentRoute(currentRoute) {
         return currentRoute === 'home' ? (
-            <Home />
+            <Routes.Home />
         ) : currentRoute === 'about' ? (
-            <About />
+            <Routes.About />
         ) : currentRoute === 'profile' ? (
-            <Profile />
+            <Routes.Profile />
         ) : (
             <p>No page</p>
         );

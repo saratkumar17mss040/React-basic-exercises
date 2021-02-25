@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function Post() {
+export function Post() {
     const [char, setChar] = useState(0);
 
     function numberOfCharacters(event) {

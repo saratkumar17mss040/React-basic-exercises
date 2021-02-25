@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function ToggleMode() {
+export function ToggleMode() {
     const [isDarkMode, setMode] = useState(false);
 
     function setTheme() {

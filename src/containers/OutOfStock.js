@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import RenderStockItems from '../components/RenderStockItems';
-import RenderStockListItems from '../components/RenderStockListItems';
-import { Stocks } from '../assets/Stocks';
+import { Stocks } from '../assets';
+import { RenderStockItems, RenderStockListItems } from '../components';
 
-export default function Stock() {
+export function OutOfStock() {
     let [stockItems, setStock] = useState([]);
     let isSameProduct = false;
 

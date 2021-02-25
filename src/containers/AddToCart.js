@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { Items } from '../assets/Items';
-import RenderCartItems from '../components/RenderCartItems';
-import RenderListItems from '../components/RenderListItems';
+import { Items } from '../assets';
+import { RenderCartItems, RenderListItems } from '../components';
 
 // AddToCart can be made modular usig Arrays -
 // include method instead by ourself looping
-export default function AddToCart() {
+export function AddToCart() {
     let [cartItems, setCart] = useState([]);
     let isSameProduct = false;
 

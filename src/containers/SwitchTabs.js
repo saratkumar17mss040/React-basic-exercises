@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { Routes } from '../components/Routes';
-import { RouteButtons } from '../assets/RouteButtons';
+import { RouteButtons } from '../assets';
+import { Routes } from '../components';
 
-export default function SwitchTabs() {
+export function SwitchTabs() {
     const [currentRoute, setCurrentRoute] = useState('');
 
     function onRouteChange(event) {

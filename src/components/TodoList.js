@@ -1,4 +1,4 @@
-export default function TodoList({ allTodo, strikeThrough }) {
+export function TodoList({ allTodo, strikeThrough }) {
     return (
         <ul>
             {allTodo.map((todo, index) => {

@@ -1,4 +1,4 @@
-export default function RenderStockItems({ stockItems, renderQuantityStatus }) {
+export function RenderStockItems({ stockItems, renderQuantityStatus }) {
     return stockItems.map((item, index) => {
         return (
             <div

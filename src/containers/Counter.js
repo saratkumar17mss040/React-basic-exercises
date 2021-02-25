@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function Counter() {
+export function Counter() {
     let [count, setCount] = useState(0);
 
     function incrementCounter() {

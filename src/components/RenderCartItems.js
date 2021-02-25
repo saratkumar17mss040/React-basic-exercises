@@ -1,4 +1,4 @@
-export default function renderCartItems({ cartItems }) {
+export function RenderCartItems({ cartItems }) {
     return cartItems.map((item, index) => {
         return (
             <div

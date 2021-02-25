@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { Items } from '../assets/Items';
-import LikeList from '../components/LikeList';
+import { Items } from '../assets';
+import { LikeList } from '../components';
 
-export default function LikeButton() {
+export function LikeButton() {
     const [likeInfo, setLikeInfo] = useState(Items);
 
     function setLikeOrNot(item, index) {

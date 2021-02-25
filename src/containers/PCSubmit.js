@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function PCSubmit() {
+export function PCSubmit() {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [value, setSubmitPassword] = useState('');

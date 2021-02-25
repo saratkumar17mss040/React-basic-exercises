@@ -1,20 +1,22 @@
 import React from 'react';
-import Product from './components/Product';
-import PasswordChecker from './containers/PasswordChecker';
-import AgeChecker from './containers/AgeChecker';
-import Counter from './containers/Counter';
-import ANPassword from './containers/ANPassword';
-import SHPassword from './containers/SHPassword';
-import PCSubmit from './containers/PCSubmit';
-import DesignTool from './containers/DesignTool';
-import Post from './containers/Post';
-import AddToCart from './containers/AddToCart';
-import SwitchTabs from './containers/SwitchTabs';
-import ToastButton from './containers/ToastButton';
-import LikeButton from './containers/LikeButton';
-import ToggleMode from './containers/ToggleMode';
-import Stock from './containers/OutOfStock';
-import Todo from './containers/Todo';
+import { Product } from './components';
+import {
+    AddToCart,
+    AgeChecker,
+    ANPassword,
+    OutOfStock,
+    PasswordChecker,
+    Counter,
+    DesignTool,
+    LikeButton,
+    PCSubmit,
+    Post,
+    SHPassword,
+    SwitchTabs,
+    ToastButton,
+    Todo,
+    ToggleMode,
+} from './containers';
 import './styles.css';
 
 export default function App() {
@@ -55,7 +57,7 @@ export default function App() {
             <h1>Exercise - 14</h1>
             <ToggleMode />
             <h1>Exercise - 15</h1>
-            <Stock />
+            <OutOfStock />
             <h1>Exercise - 16</h1>
             <Todo />
         </div>

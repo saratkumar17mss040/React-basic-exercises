@@ -1,4 +1,4 @@
-export default function RenderStockListItems({ stocks, addToStock }) {
+export function RenderStockListItems({ stocks, addToStock }) {
     return stocks.map((item, index) => {
         return (
             <div

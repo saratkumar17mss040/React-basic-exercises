@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function PasswordChecker() {
+export function PasswordChecker() {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
 

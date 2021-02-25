@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import React from 'react';
 
-export default function DesignTool() {
+export function DesignTool() {
     const [fontSize, setFontSize] = useState(16);
 
     function increaseFontSize() {

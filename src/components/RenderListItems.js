@@ -1,4 +1,4 @@
-export default function RenderListItems({ items, addToCart }) {
+export function RenderListItems({ items, addToCart }) {
     return items.map((item, index) => {
         return (
             <div

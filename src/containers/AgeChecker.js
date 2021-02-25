@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function AgeChecker() {
+export function AgeChecker() {
     let [age, checkEligibility] = useState('');
 
     function checkEligibilityForVoting() {

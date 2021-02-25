@@ -1,4 +1,4 @@
-export default function Product({
+export function Product({
     name,
     type,
     currentPrice,

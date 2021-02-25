@@ -1,4 +1,4 @@
-export default function renderList({ likeInfo, setLikeOrNot }) {
+export function LikeList({ likeInfo, setLikeOrNot }) {
     return likeInfo.map((currentLikeInfo, index) => {
         return (
             <div>
